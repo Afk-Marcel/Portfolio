@@ -9,6 +9,7 @@ This is a simple web model for a CV I created to showcase my abilities using htm
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Contributing](#contributing)
 - [Contact](#contact)
 
 ## Installation
@@ -36,6 +37,10 @@ On a seperate page you will see a dropdown menu, a list of all sections saved an
 ## Credits
 
 This project was created and designed by Marcel. 
+
+## Contributing
+
+We welcome contributions from the community! If you have ideas for improvements or find any issues, please open an issue or submit a pull request.
 
 ## Contact
 
