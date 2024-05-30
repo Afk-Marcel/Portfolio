@@ -19,7 +19,7 @@ git clone https://github.com/Afk-Marcel/Portfolio.git
 ## Usage
 
 Once the website as opened you will see the main page known as 'Homepage'. You will see a span element 'save for later', if pressed it will save the current section and alert you as seen here:
-
+<br>
 <img width="1000" alt="saved" src="https://github.com/Afk-Marcel/Portfolio/assets/156346612/617645ca-4471-45eb-b418-eb34fde3f12d"> 
 
 You will se a 'like' button, when pressed it will set the section to liked and alert you as seen here:
