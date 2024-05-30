@@ -18,6 +18,7 @@ git clone https://github.com/Afk-Marcel/Portfolio.git
 
 Once the website as opened you will see the main page known as 'Homepage'. You will see a span element 'save for later', if pressed it will save the current section and alert you as seen here:
 
+
 <img width="1000" alt="saved" src="https://github.com/Afk-Marcel/Portfolio/assets/156346612/617645ca-4471-45eb-b418-eb34fde3f12d"> 
 You will se a 'like' button, when pressed it will set the section to liked and alert you as seen here: <img width="1000" alt="like" src="https://github.com/Afk-Marcel/Portfolio/assets/156346612/ceb025b5-607a-46e8-a159-1d8e9cca3585">
 You will find a 'toggle visibility' button when pressed it will hide that current section as seen here: <img width="1000" alt="hide" src="https://github.com/Afk-Marcel/Portfolio/assets/156346612/b949a71a-89a6-467c-a311-bb75ba2b8f57"> 
