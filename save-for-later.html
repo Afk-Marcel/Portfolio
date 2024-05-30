@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Saved Items</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Dropdown menu -->
+      <div class="dropdown">
+        <span class="dropspan">Menu</span>
+        <div class="dropdown-content">
+          <a href="index.html">Homepage</a>
+          <a href="details.html">Contact Details</a>
+          <a href="about-me.html">About Me</a>
+        </div>
+      </div>
+      <h1>Saved Items</h1>
+      <!-- Section for saved items -->
+      <div class="saved-items">
+        <!-- Button to clear saved sections -->
+        <button onclick="clearSavedSections()">Clear Saved Sections/liked sections</button>
+        <!-- Container to display saved sections -->
+        <div id="saved-sections"></div>
+      </div>
+      <!-- Section for leaving comments -->
+      <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <!-- Form for submitting comments -->
+        <form onsubmit="submitComment(event, 'section1')">
+          <textarea id="comment-section1" rows="3" cols="50" placeholder="Write your comment here..."></textarea><br />
+          <button type="submit">Submit Comment</button>
+        </form>
+      </div>
+      <!-- Section for contacting -->
+      <div class="contact-form">
+        <h3>Contact Us</h3>
+        <!-- Form for submitting contact messages -->
+        <form onsubmit="submitContactForm(event)">
+          <input type="text" id="contact-name" placeholder="Your Name" required /><br />
+          <input type="email" id="contact-email" placeholder="Your Email" required /><br />
+          <textarea id="contact-message" rows="4" cols="50" placeholder="Your Message" required></textarea><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Script to load saved sections on page load -->
+    <script>
+      window.onload = function () {
+        viewSavedSections();
+      };
+    </script>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

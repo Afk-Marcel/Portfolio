@@ -1,0 +1,312 @@
+@import "_var";
+
+/* Global styles */
+* {
+  background-color: $background-color;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  @extend .oswald-main; /* Extends font styles */
+}
+
+/* Heading styles */
+h1 {
+  color: $text-color;
+  padding: 1.5rem;
+  text-align: center;
+  @extend .oswald-main; /* Extends font styles */
+  font-weight: 600;
+  animation: slideLeftRight 3s infinite; /* Apply animation */
+}
+
+/* Layout styles */
+.main,
+.main-details,
+.main-about {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Details section */
+.main-details {
+  margin-top: 4rem;
+}
+
+/* Image styles */
+.details-img,
+.about-me-img {
+  margin: 2rem;
+  width: 17%;
+}
+
+.details-img img,
+.about-me-img img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 $primary-color;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+/* Text styles */
+.first-paragraph,
+.info {
+  color: $text-color;
+}
+
+.info {
+  margin-top: 1rem;
+}
+
+.link {
+  color: $primary-color;
+  font-weight: bolder;
+}
+
+/* Submit button styles */
+.submit {
+  margin-top: 2rem;
+  margin-left: -7rem;
+  color: $text-color;
+  font-weight: 600;
+  text-align: center;
+  font-size: xx-large;
+  position: relative; /* Added for background image */
+  background-image: url("img/black-abstract-background_1393-348.avif"); /* Background image */
+  height: 3.5rem;
+  width: 25rem;
+  left: 6rem;
+}
+
+/* Subscribe button styles */
+.subscribe {
+  background-color: $primary-color;
+  font-size: large;
+  color: $text-color;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+/* Radio button background */
+.radio-background {
+  margin-top: 8rem;
+}
+
+/* Nature text */
+.nature-text {
+  position: relative;
+  background-image: url("img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjM0MTcwNjg4MTItaW1hZ2Uta3FhcDlyZHcuanBn.webp");
+  height: 3.5rem;
+  width: auto;
+  align-content: center;
+  text-align: center;
+  font-size: x-large;
+  color: $primary-color;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+/* Radio button input cursor */
+.radio-background input {
+  cursor: pointer;
+}
+
+/* Insight text styles */
+.insight-text {
+  text-align: center;
+  font-size: large;
+  padding: 2rem;
+}
+
+/* Info heading styles */
+.info h3 {
+  font-size: x-large;
+}
+
+/* Insight section layout */
+.insight {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+/* Work section styles */
+.work {
+  margin: 2rem;
+  text-align: center;
+}
+
+/* Image styles */
+.me-img {
+  position: relative;
+  width: 30%;
+  height: auto;
+  left: 360px;
+}
+
+/* Table styles */
+.table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid $text-color;
+  padding: 8px;
+}
+
+/* Merida text color */
+.merida {
+  color: $primary-color;
+}
+
+/* Background colors */
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: blue;
+}
+
+/* Background images */
+.four {
+  background-image: url(img/Tour-de-france.jpg);
+  background-size: cover;
+}
+
+.five {
+  background-image: url(img/egan-bernal-of-colombia-and-team-ineos-yellow-leader-jersey-news-photo-1585589632.jpg);
+  background-size: cover;
+}
+
+.six {
+  background-image: url(img/jbethea-ninerbikes.jpg);
+  background-size: cover;
+}
+
+p,
+button {
+  color: $text-color;
+}
+
+span {
+  color: $primary-color;
+}
+
+button {
+  background-color: $primary-color;
+}
+
+.main-container {
+  margin: 2rem;
+  color: $text-color;
+}
+
+.comment-section textarea,
+.contact-form input,
+.contact-form textarea {
+  color: $text-color;
+}
+
+.like-button {
+  padding: 0.5px 10px;
+  border-radius: 5px 3px 4px 2px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: $secondary-color;
+}
+
+/* Drop-down menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: $text-color;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropspan {
+  color: $text-color;
+}
+
+/* Define the repeated left-right animation */
+@keyframes slideLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply initial styles to h2 elements */
+h2 {
+  opacity: 1;
+  transition: transform 1s ease-out;
+}
+
+/* Example CSS animation */
+@keyframes slideOutAndIn {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Class to trigger the slide-out-and-in animation */
+.slide-out-in {
+  animation: slideOutAndIn 2s forwards;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}

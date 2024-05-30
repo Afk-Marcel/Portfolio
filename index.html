@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Title of the webpage -->
+    <title>Marcel Greyling</title>
+  </head>
+  <body>
+    <!-- Main heading of the webpage -->
+    <h1>Homepage</h1>
+    <div class="main">
+      <!-- Link to the details page with an image -->
+      <a href="details.html" class="details-img"><img src="img/contact.png" alt="Contact details page" /></a>
+      <div class="info">
+        <div id="section1">
+          <!-- Section about cycling -->
+          <h2>Cycling</h2>
+          <hr />
+          <br />
+          <!-- Paragraph describing my interest -->
+          <p class="first-paragraph" style="font-size: large">
+            Cycling is a big part of my life, it has given me many adventures and excitement. The feeling you get when riding
+            <br />
+            through nature makes you feel relaxed and it's a great getaway from everything else in your life. I started
+            cycling
+            <br />
+            about 2 years ago and have enjoyed it ever since. I'm not a professional cyclist but my record is 50km since I
+            <br />
+            began cycling which I see as an achievement.
+          </p>
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section1')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section1')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section1')">Toggle Visibility</button>
+        </div>
+        <br />
+        <div id="section2">
+          <!-- Section about the benefits of cycling -->
+          <h2>Benefits to cycling</h2>
+          <hr />
+          <br />
+          <!-- Table listing various benefits of cycling -->
+          <table class="table">
+            <tr>
+              <th class="one">Benefit 1</th>
+              <th class="two">Benefit 2</th>
+              <th class="three">Benefit 3</th>
+            </tr>
+            <tr>
+              <td class="four">
+                Cycling can help to protect you from serious <br />
+                diseases such as stroke, heart attack, some <br />
+                cancers, depression, diabetes, <br />
+                obesity, and arthritis.
+              </td>
+              <td class="five">
+                Riding a bike is healthy, fun, and a <br />
+                low-impact form of exercise for all ages.
+              </td>
+              <td class="six">
+                Cycling is easy to fit into your daily <br />
+                routine by riding to the shops, park, <br />
+                school, or work.
+              </td>
+            </tr>
+          </table>
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section2')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section2')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section2')">Toggle Visibility</button>
+        </div>
+        <br />
+        <div id="section3">
+          <!-- Section about notable bike brands -->
+          <h2>Notable bike brands</h2>
+          <hr />
+          <br />
+          <!-- Paragraph describing personal preferences for bike brands with links to their websites -->
+          <p style="font-size: large">
+            My own bike is a <a class="merida" target="_blank" href="https://www.merida-bikes.com/en">Merida</a>, I love it
+            as it is very reliable and easy to adjust. There are many brands that I love including <br />
+            <a class="merida" target="_blank" href="https://www.trekbikes.com/za">Trek</a> and
+            <a class="merida" target="_blank" href="https://www.santacruzbicycles.com/">Santa Cruz</a>, however I have only
+            ridden them a handful of times.
+          </p>
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section3')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section3')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section3')">Toggle Visibility</button>
+        </div>
+        <!-- Button to trigger chained effects -->
+        <button id="triggerButton">Trigger Chained Effects</button>
+        <!-- Placeholder for status messages -->
+        <div id="status"></div>
+        <!-- Button to view saved sections -->
+        <button onclick="window.location.href='save-for-later.html'">View Saved Sections</button>
+      </div>
+      <!-- Link to the about me page with an image -->
+      <a href="about-me.html" class="about-me-img"><img src="img/about-me.png" alt="About me page" /></a>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

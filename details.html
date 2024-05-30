@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Title of the webpage -->
+    <title>Marcel Greyling</title>
+  </head>
+  <body>
+    <!-- Main heading of the webpage -->
+    <h1>Contact Details</h1>
+    <div class="main-details">
+      <!-- Link to the homepage with an image -->
+      <a href="index.html" class="details-img"><img src="img/homepage.png" alt="Homepage" /></a>
+      <div class="info" style="font-size: 1.5em">
+        <div id="section4">
+          <!-- List of contact details -->
+          <ul>
+            <li>Programmer: Full-stack Development, Software Engineer</li>
+            <li>Contact Number: 082 227 8664</li>
+            <li>Email: mjgreyling@icloud.com</li>
+            <li>
+              Social Media:
+              <!-- Link to LinkedIn profile -->
+              <a class="link" target="_blank" href="https://www.linkedin.com/in/marcel-greyling-81a749305">LinkedIn</a>
+            </li>
+          </ul>
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section4')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section4')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section4')">Toggle Visibility</button>
+        </div>
+        <div id="section5" class="submit">
+          <!-- Subscription section for a newsletter -->
+          <span class="sub">Subscribe to my newsletter</span>
+          <button class="subscribe" type="submit">Subscribe!</button>
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section5')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section5')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section5')">Toggle Visibility</button>
+        </div>
+        <div id="section6" class="radio-background">
+          <!-- Section for rating the website -->
+          <span class="sub">Rate my website:</span> <br />
+          <input type="radio" name="Rating" value="one-star" /><i class="far fa-star"></i><br />
+          <input type="radio" name="Rating" value="two-stars" /><i class="far fa-star"></i><i class="far fa-star"></i> <br />
+          <input type="radio" name="Rating" value="three-stars" /><i class="far fa-star"></i><i class="far fa-star"></i
+          ><i class="far fa-star"></i> <br />
+          <input type="radio" name="Rating" value="four-stars" /><i class="far fa-star"></i><i class="far fa-star"></i
+          ><i class="far fa-star"></i><i class="far fa-star"></i> <br />
+          <input type="radio" name="Rating" value="five-stars" /><i class="far fa-star"></i><i class="far fa-star"></i
+          ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+          <br />
+          <!-- Button to save section for later -->
+          <span class="save-button" onclick="saveForLater('section6')">Save for Later</span>
+          <!-- Section for like button -->
+          <div class="like-section">
+            <button class="like-button" onclick="likeSection('section6')">Like</button>
+          </div>
+          <!-- Button to toggle section visibility -->
+          <button onclick="toggleSectionVisibility('section6')">Toggle Visibility</button>
+        </div>
+        <!-- Button to view saved sections -->
+        <button onclick="window.location.href='save-for-later.html'">View Saved Sections</button>
+      </div>
+      <!-- Link to the about me page with an image -->
+      <a href="about-me.html" class="about-me-img"><img src="img/about-me.png" alt="About me page" /></a>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

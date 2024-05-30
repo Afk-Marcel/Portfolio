@@ -1,0 +1,25 @@
+/* Import the Oswald font*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* Define primary color variable for reuse across the stylesheet */
+$primary-color: #0e46a3;
+
+/* Define secondary color variable for reuse across the stylesheet */
+$secondary-color: #10439f;
+
+/* Define background color variable for reuse across the stylesheet */
+$background-color: #333333;
+
+/* Define text color variable for reuse across the stylesheet */
+$text-color: #faf9f6;
+
+/* Define font family variable to use the imported Oswald font */
+$font-family: "Oswald", sans-serif;
+
+/* Class to apply Oswald font styles to elements */
+.oswald-main {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
